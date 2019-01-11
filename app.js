@@ -30,7 +30,7 @@ var appRoutes = require('./routes/app');
 var usuarioRoutes = require('./routes/inhumados');
 
 // Conexión a la base de datos
-mongoose.connection.openUri('mongodb://localhost:27017/jardinesDB', (err, res) => {
+mongoose.connection.openUri('mongodb://192.168.1.3:27017/jardinesDB', (err, res) => {
 
     if (err) throw err;
 
